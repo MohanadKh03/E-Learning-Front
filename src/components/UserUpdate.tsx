@@ -37,7 +37,7 @@ function UserUpdate() {
         
       if (foundUser) {
         setUser(foundUser);
-        setErrors(null); // Reset errors when user is found
+        setErrors(null); 
       } else {
         setErrors([{ field: 'userId', message: 'User not found.' }]);
       }

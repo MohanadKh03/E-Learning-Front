@@ -81,6 +81,8 @@ function UserDeletion() {
         setErrors([{ field: 'general', message: 'An error occurred. Please try again later.' }]);
       }
     }
+    setUser(null);
+    setSuccess('');
   };
 
   return (

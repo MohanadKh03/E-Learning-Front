@@ -37,10 +37,8 @@ const [errors,setErrors] = useState<IError[] | null>(null);
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      // Send POST request to your server
       const response = await axios.post('http://localhost:1234/users/create', user);
       console.log('Response:', response.data);
-      // Reset form after successful submission
       setUser({
         firstName: '',
         lastName: '',
@@ -52,15 +50,11 @@ const [errors,setErrors] = useState<IError[] | null>(null);
     } catch (error: any) {
         console.log("HERE ARE" + errors)
       if (error.response) {
-        // Server responded with an error status code (4xx or 5xx)
         console.error('Error response:', error.response.data);
-        // Store errors in state
         setErrors(error.response.data.body);
       } else {
-        // Something went wrong with the request (e.g., network error)
         console.error('Error:', error.message);
         setErrors([{ field: 'general', message: 'An error occurred. Please try again later.' }]);
-        //setErrors('An error occurred. Please try again later.');
       }
     }
   };
