@@ -20,6 +20,12 @@ function HomePage() {
             <Link to="/update" className="btn btn-info btn-lg mb-3">
               Update an existing user
             </Link>
+            <Link to="/course-create" className="btn btn-info btn-lg mb-3">
+              Create a new course
+            </Link>
+            <Link to="/course-management" className="btn btn-info btn-lg mb-3">
+              Manage courses
+            </Link>
           </div>
         </div>
       </div>

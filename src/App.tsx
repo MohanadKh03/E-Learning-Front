@@ -8,6 +8,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import HomePage from './components/Home';
 import UserUpdate from './components/UserUpdate';
 import UserDeletion from './components/UserDeletion';
+import CourseCreation from './components/CourseCreation';
+import CourseManagement from './components/CoursesManagement';
 
 function App() {
   let name = 'John Doe';
@@ -18,6 +20,8 @@ function App() {
         <Route path='/create' Component={UserCreation}/>
         <Route path='/update' Component={UserUpdate}/>
         <Route path='/delete' Component={UserDeletion}/>
+        <Route path='/course-create' Component={CourseCreation}/>
+        <Route path='/course-management' Component={CourseManagement}/>
       </Routes>
     </BrowserRouter>
   );
