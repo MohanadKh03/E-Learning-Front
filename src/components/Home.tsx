@@ -26,6 +26,9 @@ function HomePage() {
             <Link to="/course-management" className="btn btn-info btn-lg mb-3">
               Manage courses
             </Link>
+            <Link to="/add-student" className="btn btn-info btn-lg mb-3">
+              Add new student to course
+            </Link>
           </div>
         </div>
       </div>

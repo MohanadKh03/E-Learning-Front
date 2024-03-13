@@ -10,6 +10,7 @@ import UserUpdate from './components/UserUpdate';
 import UserDeletion from './components/UserDeletion';
 import CourseCreation from './components/CourseCreation';
 import CourseManagement from './components/CoursesManagement';
+import EnrollStudent from './components/EnrollStudent';
 
 function App() {
   let name = 'John Doe';
@@ -22,6 +23,7 @@ function App() {
         <Route path='/delete' Component={UserDeletion}/>
         <Route path='/course-create' Component={CourseCreation}/>
         <Route path='/course-management' Component={CourseManagement}/>
+        <Route path='/add-student' Component={EnrollStudent}/>
       </Routes>
     </BrowserRouter>
   );
