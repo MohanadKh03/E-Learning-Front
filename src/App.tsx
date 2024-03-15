@@ -11,6 +11,8 @@ import UserDeletion from './components/UserDeletion';
 import CourseCreation from './components/CourseCreation';
 import CourseManagement from './components/CoursesManagement';
 import EnrollStudent from './components/EnrollStudent';
+import AssignGrade from './components/GradeAssignment' 
+import ViewGrade from './components/ViewGrades' 
 
 function App() {
   let name = 'John Doe';
@@ -24,6 +26,8 @@ function App() {
         <Route path='/course-create' Component={CourseCreation}/>
         <Route path='/course-management' Component={CourseManagement}/>
         <Route path='/add-student' Component={EnrollStudent}/>
+        <Route path='/assign-grade' Component={AssignGrade}/>
+        <Route path='/view-grades' Component={ViewGrade}/>
       </Routes>
     </BrowserRouter>
   );

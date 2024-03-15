@@ -29,6 +29,12 @@ function HomePage() {
             <Link to="/add-student" className="btn btn-info btn-lg mb-3">
               Add new student to course
             </Link>
+            <Link to="/assign-grade" className="btn btn-info btn-lg mb-3">
+              Assign grade to student
+            </Link>
+            <Link to="/view-grades" className="btn btn-info btn-lg mb-3">
+              View grades
+            </Link>
           </div>
         </div>
       </div>
